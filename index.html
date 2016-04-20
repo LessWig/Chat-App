@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="columns.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="./node_modules/faye/browser/faye-browser-min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="row col-md-push-2 col-md-8">
+      <div>GCCHS DEV CHAT</div>
+      <div class="row">
+        <div class="user-list col-md-2">
+          <h4>User List</h4>
+          Sam <br/>
+          Jerry <br/>
+          Bob <br/>
+          Lisa
+        </div>
+        <div class="chat-window col-md-10"></div>
+      </div>
+      <div class="col-md-12">
+        <input class="message-input col-md-11" type="text" placeholder="Enter Message"/>
+        <input class="col-md-1" id="submit-message" type="submit" value="Send"/>
+      </div>
+    </div>
+    <div id="username-modal" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <p>Enter Server IP</p>
+            <input id="ip" type="text" placeholder="192.168.255.255"/>
+            <p>Enter Username</p>
+            <input id="username" type="text" placeholder="BOB"/>
+            <p>
+              <button class="submit-button">Submit</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="dev_chat.js"></script>
+  </body>
+</html>
